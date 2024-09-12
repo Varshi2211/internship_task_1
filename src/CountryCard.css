@@ -1,0 +1,75 @@
+.card {
+    perspective: 1000px;
+    width: 350px;
+    height: 250px;
+    margin: 2em 0 13em 0;
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 22em;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0s;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-front {
+    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+  
+  .card-back {
+    background-color: #eef;
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .info {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  .info h3 {
+    margin-bottom: 2px;
+    color: #242424;
+  }
+  
+  .info p {
+    margin: 2px 20px;
+    color: #5a5a5a;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to right, #03032b 5%,#7b7bcf 50%, rgb(142, 192, 201)  100%);;
+  }
+  .cardtitles{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+  }
